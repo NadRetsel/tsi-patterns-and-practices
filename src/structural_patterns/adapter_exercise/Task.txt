@@ -1,0 +1,8 @@
+We've been working on our project where we make heavy use of the toString override in our classes, since we print things
+to the terminal an awful lot. Unfortunately, the Pensioner class doesn't override toString, and is imported from a
+library that we can't change the source code in, so we can't use it in our program right now even though it would be handy.
+The exact behaviour you might expect is contained within the Pensioner classes getInfo method, but obviously built-in
+utilities like System.out.print don't know to use it.
+
+Could you make an Adapter class that wraps around Pensioner to invoke that getInfo method when we call toString on the
+adapter object?
